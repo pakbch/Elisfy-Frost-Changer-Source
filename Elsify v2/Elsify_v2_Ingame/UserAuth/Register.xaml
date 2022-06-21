@@ -1,0 +1,85 @@
+<Window
+	x:Class="Elsify_v2_Ingame.UserAuth.Register" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Elsify_v2_Ingame.UserAuth"
+	Title="Register"
+	Background="#00FFFFFF"
+	Height="600"
+	Width="1000"
+	WindowStyle="None"
+	WindowStartupLocation="CenterScreen"
+	AllowsTransparency="True">
+	<Grid>
+		<Image
+			Source="/UserAuth/Elsify_Register_Screen_Round.png"
+			MouseDown="Image_MouseDown" />
+		<TextBox
+			Name="userNameBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="651,203,103,367" />
+		<PasswordBox
+			Name="passwordBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga1}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="651,261,103,309" />
+		<TextBox
+			Name="emailBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="651,314,103,256" />
+		<TextBox
+			Name="keyBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="651,370,103,200" />
+		<Label
+			Name="regLabel"
+			Content="Register"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="698,430,160,142"
+			MouseLeftButtonDown="loginLabel_MouseLeftButtonDown" />
+		<Label
+			Name="backToLoginLabel"
+			Content="Back to Login"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="698,535,160,37"
+			MouseLeftButtonDown="backToLoginLabel_MouseLeftButtonDown" />
+		<Label
+			Name="closeLbl"
+			Content="X"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="955,535,17,37"
+			MouseLeftButtonDown="closeLbl_MouseLeftButtonDown" />
+	</Grid>
+</Window>

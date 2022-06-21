@@ -1,0 +1,107 @@
+<UserControl
+	x:Class="Elsify_v2.CurrentGame.CurrentGameUC" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Elsify_v2.CurrentGame">
+	<Grid>
+		<Grid
+			Name="NotInGameGrid"
+			Visibility="Visible">
+			<Label
+				Foreground="#FFFFFFFF"
+				Visibility="Visible"
+				FontWeight="Bold"
+				FontSize="20"
+				Margin="0,0,800,564">
+				<TextBlock
+					TextDecorations="Underline">Current Game</TextBlock>
+			</Label>
+			<Label
+				Content="You're currently not ingame"
+				FontWeight="Bold"
+				Foreground="#FFFFFFFF"
+				FontSize="16"
+				Margin="0,47,733,528" />
+		</Grid>
+		<Grid
+			Name="PreGameGrid"
+			Visibility="Hidden">
+			<Label
+				Foreground="#FFFFFFFF"
+				Visibility="Visible"
+				FontWeight="Bold"
+				FontSize="20"
+				Margin="0,0,768,564">
+				<TextBlock
+					TextDecorations="Underline">Current Pregame</TextBlock>
+			</Label>
+			<Label
+				Name="pregameID"
+				Content="Match ID:"
+				FontWeight="Bold"
+				Foreground="#FFFFFFFF"
+				FontSize="16"
+				Margin="0,47,0,528" />
+			<ScrollViewer
+				Name="scroll1"
+				HorizontalScrollBarVisibility="Hidden"
+				Margin="2,112,10,10"
+				VerticalScrollBarVisibility="Hidden"
+				Width="940"
+				Height="484">
+				<StackPanel
+					Name="flowlayoutPanel1"
+					Width="940" />
+			</ScrollViewer>
+		</Grid>
+		<Grid
+			Name="IngameGrid"
+			Visibility="Hidden">
+			<Label
+				Foreground="#FFFFFFFF"
+				Visibility="Visible"
+				FontWeight="Bold"
+				FontSize="20"
+				Margin="0,0,768,564">
+				<TextBlock
+					TextDecorations="Underline">Current Game</TextBlock>
+			</Label>
+			<Label
+				Name="gameID"
+				Content="Match ID: f1e1c057-a783-464d-8811-5ef1dbd3aa3c"
+				FontWeight="Bold"
+				Foreground="#FFFFFFFF"
+				FontSize="16"
+				Margin="0,47,547,528" />
+			<Label
+				Name="mapName"
+				Content="Map: Ascent"
+				FontWeight="Bold"
+				Foreground="#FFFFFFFF"
+				FontSize="16"
+				Margin="416,47,416,528" />
+			<Label
+				Name="gamdeModeLabel"
+				Content="Gamemode: Unrated"
+				FontWeight="Bold"
+				Foreground="#FFFFFFFF"
+				FontSize="16"
+				Margin="550,47,164,528" />
+			<Label
+				Name="playersLabel"
+				Content="Players:"
+				FontWeight="Bold"
+				Foreground="#FFFFFFFF"
+				FontSize="16"
+				Margin="0,78,0,497" />
+			<ScrollViewer
+				Name="scroll"
+				HorizontalScrollBarVisibility="Hidden"
+				Margin="2,112,10,10"
+				VerticalScrollBarVisibility="Hidden"
+				Width="940"
+				Height="484">
+				<StackPanel
+					Name="flowlayoutPanel"
+					Width="940" />
+			</ScrollViewer>
+		</Grid>
+	</Grid>
+</UserControl>

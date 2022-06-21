@@ -1,0 +1,82 @@
+<Window
+	x:Class="Elsify_v2_Ingame.UserAuth.Login" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Elsify_v2_Ingame.UserAuth"
+	Title="Login"
+	Background="#00FFFFFF"
+	Height="600"
+	Width="1000"
+	WindowStyle="None"
+	WindowStartupLocation="CenterScreen"
+	AllowsTransparency="True">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<Storyboard
+				x:Key="LoginLabelHover" />
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Grid>
+		<Image
+			Source="/UserAuth/Elsify_Login_pub.png"
+			MouseDown="Image_MouseDown" />
+		<TextBox
+			Name="userNameBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="652,250,102,320" />
+		<PasswordBox
+			Name="passwordBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga1}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="652,308,102,262" />
+		<Label
+			Name="loginLabel"
+			Content="Login"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="792,388,66,184"
+			MouseLeftButtonDown="loginLabel_MouseLeftButtonDown" />
+		<Label
+			Name="FreeloginLabel"
+			Content="Free"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="620,388,238,184"
+			MouseLeftButtonDown="FreeLabel_MouseLeftButtonDown" />
+		<Label
+			Name="regLabel"
+			Content="Register"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="698,535,160,37"
+			MouseLeftButtonDown="regLabel_MouseLeftButtonDown" />
+		<Label
+			Name="closeLabel"
+			Content="X"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="955,535,18,37"
+			RenderTransformOrigin="0.638,0.536"
+			MouseLeftButtonDown="closeLabel_MouseLeftButtonDown" />
+	</Grid>
+</Window>

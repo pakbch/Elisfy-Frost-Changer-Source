@@ -1,0 +1,119 @@
+<UserControl
+	x:Class="Elsify_v2_Ingame.Shop.ShopUC" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Elsify_v2_Ingame.Shop">
+	<Grid>
+		<Label
+			Foreground="#FFFFFFFF"
+			Visibility="Visible"
+			FontWeight="Bold"
+			FontSize="20"
+			Margin="0,0,508,564">
+			<TextBlock
+				Name="te"
+				TextDecorations="Underline">Shop</TextBlock>
+		</Label>
+		<Border
+			CornerRadius="15"
+			BorderBrush="#FFFFFFFF"
+			BorderThickness="2"
+			Background="#00FFFFFF"
+			Margin="8,88,12,422"
+			Width="932"
+			Height="96" />
+		<Image
+			Name="item1"
+			Cursor="Hand"
+			Margin="34,102,738,436"
+			RenderTransformOrigin="0.5,0.5"
+			Source="/accounticon.png"
+			Width="180"
+			Height="68" />
+		<Label
+			Name="labelitem1"
+			Content="Placeholder"
+			VerticalAlignment="Bottom"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			Margin="229,0,429,457"
+			HorizontalContentAlignment="Center"
+			Width="294"
+			Height="26" />
+		<Border
+			CornerRadius="15"
+			BorderBrush="#FFFFFFFF"
+			BorderThickness="2"
+			Background="#00FFFFFF"
+			Margin="8,196,12,314"
+			Width="932"
+			Height="96" />
+		<Image
+			Name="item2"
+			Cursor="Hand"
+			Margin="34,210,738,328"
+			RenderTransformOrigin="0.5,0.5"
+			Source="/accounticon.png"
+			Width="180"
+			Height="68" />
+		<Label
+			Name="labelitem2"
+			Content="Placeholder"
+			VerticalAlignment="Bottom"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			Margin="229,0,429,349"
+			HorizontalContentAlignment="Center"
+			Width="294"
+			Height="26" />
+		<Border
+			CornerRadius="15"
+			BorderBrush="#FFFFFFFF"
+			BorderThickness="2"
+			Background="#00FFFFFF"
+			Margin="8,307,12,203"
+			Width="932"
+			Height="96" />
+		<Image
+			Name="item3"
+			Cursor="Hand"
+			Margin="34,321,738,217"
+			RenderTransformOrigin="0.5,0.5"
+			Source="/accounticon.png"
+			Width="180"
+			Height="68" />
+		<Label
+			Name="labelitem3"
+			Content="Placeholder"
+			VerticalAlignment="Bottom"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			Margin="229,0,429,238"
+			HorizontalContentAlignment="Center"
+			Width="294"
+			Height="26" />
+		<Border
+			CornerRadius="15"
+			BorderBrush="#FFFFFFFF"
+			BorderThickness="2"
+			Background="#00FFFFFF"
+			Margin="8,415,12,95"
+			Width="932"
+			Height="96" />
+		<Image
+			Name="item4"
+			Cursor="Hand"
+			Margin="34,429,738,109"
+			RenderTransformOrigin="0.5,0.5"
+			Source="/accounticon.png"
+			Width="180"
+			Height="68" />
+		<Label
+			Name="labelitem4"
+			Content="Placeholder"
+			VerticalAlignment="Bottom"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			Margin="229,0,429,130"
+			HorizontalContentAlignment="Center"
+			Width="294"
+			Height="26" />
+	</Grid>
+</UserControl>

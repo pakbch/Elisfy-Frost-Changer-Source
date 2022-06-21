@@ -1,0 +1,302 @@
+<UserControl
+	x:Class="Elsify_v2_Ingame.ItemCard" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Elsify_v2_Ingame"
+	Height="210"
+	Width="232">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<Storyboard
+				x:Key="Storyboard1" />
+			<Storyboard
+				x:Key="ItemHoverScale">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1.171">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1.129">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="5">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="0.167">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ItemHoverScaleReverse">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1.171" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1.129" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="5" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="0">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="itemPicture"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="0.167" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="0">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ItemImageHoverScale">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1.151">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1.157">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="-2.001">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="4.333">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ItemImageHoverScaleReverse">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1.151" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="1.157" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="1">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="-2.001" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="0">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="swaptoimage"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+					<SplineDoubleKeyFrame
+						KeyTime="00:00:00"
+						Value="4.333" />
+					<EasingDoubleKeyFrame
+						KeyTime="00:00:00.3000000"
+						Value="0">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Grid
+		Height="210"
+		Width="232">
+		<Border
+			Height="190"
+			Width="190"
+			CornerRadius="15"
+			BorderBrush="#FFFFFFFF"
+			BorderThickness="2"
+			Background="#00FFFFFF">
+			<Image
+				Name="swaptoimage"
+				Height="132"
+				VerticalAlignment="Top"
+				HorizontalAlignment="Center"
+				Width="133"
+				Source="/discordIcon.png"
+				Margin="0,8,0,0"
+				RenderTransformOrigin="0.5,0.5"
+				MouseEnter="swapto_MouseEnter"
+				MouseLeave="swapto_MouseLeave">
+				<UIElement.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform />
+						<SkewTransform />
+						<RotateTransform />
+						<TranslateTransform />
+					</TransformGroup>
+				</UIElement.RenderTransform>
+			</Image>
+		</Border>
+		<Label
+			Name="itemNameLabel"
+			FontWeight="Bold"
+			HorizontalAlignment="Center"
+			Content="Renegade Raider"
+			Foreground="#FFFFFFFF"
+			Margin="0,153,0,10" />
+	</Grid>
+</UserControl>

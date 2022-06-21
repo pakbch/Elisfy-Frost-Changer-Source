@@ -1,0 +1,41 @@
+<UserControl
+	x:Class="Elsify_v2.CurrentGame.CurrentGamePlayer" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Elsify_v2.CurrentGame"
+	Height="112">
+	<Grid>
+		<Border
+			CornerRadius="15"
+			BorderBrush="#FFFFFFFF"
+			BorderThickness="2"
+			Background="#00FFFFFF"
+			Margin="10,8,10,8"
+			Height="96" />
+		<Image
+			Name="item1"
+			Cursor="Hand"
+			Margin="27,22,814,22"
+			RenderTransformOrigin="0.5,0.5"
+			Source="/homeIcon.png"
+			Height="68"
+			Width="68" />
+		<Label
+			Name="labelitem1"
+			Content="Placeholder"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			Margin="72,0,595,0"
+			VerticalAlignment="Center"
+			HorizontalContentAlignment="Center"
+			Height="26"
+			Cursor="Hand" />
+		<Label
+			Name="labelitem2"
+			Content="Lock"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			Margin="712,0,-44,0"
+			VerticalAlignment="Center"
+			HorizontalContentAlignment="Center"
+			Height="26"
+			Cursor="Hand" />
+	</Grid>
+</UserControl>

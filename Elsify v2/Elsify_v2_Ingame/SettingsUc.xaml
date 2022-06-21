@@ -1,0 +1,34 @@
+<UserControl
+	x:Class="Elsify_v2_Ingame.SettingsUc" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Elsify_v2_Ingame">
+	<Grid>
+		<Button
+			Style="{StaticResource MaBuuutóóóón}"
+			BorderThickness="1"
+			BorderBrush="#FFFFFFFF"
+			FontWeight="Bold"
+			Foreground="#FFFFFFFF"
+			Background="#1E1F25"
+			Content="Launch Valorant"
+			Margin="397,278,397,278"
+			Width="158"
+			Height="39"
+			Click="Button_Click" />
+		<Label
+			Content="made by shimo#9999 x Qualm#3046"
+			Foreground="#FFFFFFFF"
+			Visibility="Visible"
+			FontWeight="Bold"
+			FontSize="15"
+			Margin="1,569,507,-13" />
+		<Label
+			Content="© 2022 FrostChanger.de"
+			Foreground="#FFFFFFFF"
+			Visibility="Visible"
+			FontWeight="Bold"
+			FontSize="15"
+			Margin="755,566,-247,-10" />
+		<Image
+			Source="/Elsify_Banner_large.png"
+			Margin="333,10,333,470" />
+	</Grid>
+</UserControl>

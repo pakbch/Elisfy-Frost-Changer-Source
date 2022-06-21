@@ -1,0 +1,10 @@
+<UserControl
+	x:Class="Elsify_v2_Ingame.EmptyUC" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Elsify_v2_Ingame">
+	<WrapPanel
+		Name="itemPanel"
+		Width="952"
+		Margin="0,0,0,0"
+		ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+		MaxWidth="952"
+		ScrollViewer.VerticalScrollBarVisibility="Disabled" />
+</UserControl>

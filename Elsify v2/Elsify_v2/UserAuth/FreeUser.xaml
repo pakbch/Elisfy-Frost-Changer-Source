@@ -1,0 +1,66 @@
+<Window
+	x:Class="Elsify_v2.UserAuth.FreeUser" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Elsify_v2.UserAuth"
+	Title="Login"
+	Background="#00FFFFFF"
+	Height="600"
+	Width="1000"
+	WindowStyle="None"
+	WindowStartupLocation="CenterScreen"
+	AllowsTransparency="True">
+	<Grid>
+		<Image
+			Source="/UserAuth/Elsify_Login_Screen_free.png"
+			MouseDown="Image_MouseDown" />
+		<TextBox
+			Name="keyBox"
+			HorizontalContentAlignment="Center"
+			Background="#00FFFFFF"
+			Style="{StaticResource Trigga}"
+			Cursor="IBeam"
+			Foreground="#FFFFFFFF"
+			FontWeight="Bold"
+			FontSize="18"
+			Margin="649,250,102,320" />
+		<Label
+			Name="Getkey"
+			Content="Get Key"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="621,360,237,212"
+			MouseLeftButtonDown="Getkey_MouseLeftButtonDown" />
+		<Label
+			Name="useKey"
+			Content="Use Key"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="793,360,65,212"
+			MouseLeftButtonDown="useKey_MouseLeftButtonDown" />
+		<Label
+			Name="back"
+			Content="Back To Login"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="700,534,158,38"
+			MouseLeftButtonDown="back_MouseLeftButtonDown" />
+		<Label
+			Name="closeLabel"
+			Content="X"
+			FontWeight="Regular"
+			Cursor="Hand"
+			HorizontalContentAlignment="Center"
+			FontSize="13"
+			Foreground="#FFFFFFFF"
+			Margin="955,535,18,37"
+			RenderTransformOrigin="0.638,0.536"
+			MouseLeftButtonDown="closeLabel_MouseLeftButtonDown" />
+	</Grid>
+</Window>

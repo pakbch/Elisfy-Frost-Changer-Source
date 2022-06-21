@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78BABEC9-D5AD-40AA-A240-D854930C63EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Elsify v2</RootNamespace>
+    <AssemblyName>Elsify v2</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Elsify v2.ico</ApplicationIcon>
+    <StartupObject>Elsify_v2_Ingame.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiscordRPC">
+      <HintPath>..\..\..\Users\Shahzain\Desktop\Elsify\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Users\Shahzain\Desktop\Elsify\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>..\..\..\Users\Shahzain\Desktop\Elsify\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Users\Shahzain\Desktop\Elsify\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.6\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.6\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\Users\Shahzain\Desktop\Elsify\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.ServicePoint">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.ServicePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebClient">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.WebClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.6\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.6\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.6\WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Ribbon" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Elsify_v2\CurrentGame\CurrentGamePlayer.xaml.cs">
+      <DependentUpon>CurrentGamePlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2\CurrentGame\CurrentGameUC.xaml.cs">
+      <DependentUpon>CurrentGameUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2\UserAuth\FreeUser.xaml.cs">
+      <DependentUpon>FreeUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2\ValAPINet\Agents.cs" />
+    <Compile Include="Elsify_v2_Ingame\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\Config.cs" />
+    <Compile Include="Elsify_v2_Ingame\DiscordRPC.cs" />
+    <Compile Include="Elsify_v2_Ingame\EmptyUC.xaml.cs">
+      <DependentUpon>EmptyUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\HomeNewsItem.xaml.cs">
+      <DependentUpon>HomeNewsItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\Home\HomeUC.xaml.cs">
+      <DependentUpon>HomeUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\ItemCard.xaml.cs">
+      <DependentUpon>ItemCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\PlayerTitle.xaml.cs">
+      <DependentUpon>PlayerTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\SettingsUc.xaml.cs">
+      <DependentUpon>SettingsUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\Shop\ShopUC.xaml.cs">
+      <DependentUpon>ShopUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\UserAuth\API.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\UserAuth\ApplicationSettings.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\Constants.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\Encryption.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\InfoManager.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\UserAuth\OnProgramStart.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elsify_v2_Ingame\UserAuth\Security.cs" />
+    <Compile Include="Elsify_v2_Ingame\UserAuth\User.cs" />
+    <Compile Include="Elsify_v2_Ingame\Utiels.cs" />
+    <Compile Include="Elsify_v2_Ingame\WeaponDefault.xaml.cs">
+      <DependentUpon>WeaponDefault.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="ValAPINet\AccountXP.cs" />
+    <Compile Include="ValAPINet\Agent.cs" />
+    <Compile Include="ValAPINet\Auth.cs" />
+    <Compile Include="ValAPINet\Balance.cs" />
+    <Compile Include="ValAPINet\CompHistory.cs" />
+    <Compile Include="ValAPINet\Content.cs" />
+    <Compile Include="ValAPINet\CoreGetMatch.cs" />
+    <Compile Include="ValAPINet\CoreGetPlayer.cs" />
+    <Compile Include="ValAPINet\GetParty.cs" />
+    <Compile Include="ValAPINet\Inventory.cs" />
+    <Compile Include="ValAPINet\ItemEntitlements.cs" />
+    <Compile Include="ValAPINet\Leaderboard.cs" />
+    <Compile Include="ValAPINet\MatchData.cs" />
+    <Compile Include="ValAPINet\MatchHistory.cs" />
+    <Compile Include="ValAPINet\MMR.cs" />
+    <Compile Include="ValAPINet\PartyInfo.cs" />
+    <Compile Include="ValAPINet\PregameGetMatch.cs" />
+    <Compile Include="ValAPINet\PregameGetPlayer.cs" />
+    <Compile Include="ValAPINet\Ranks.cs" />
+    <Compile Include="ValAPINet\Region.cs" />
+    <Compile Include="ValAPINet\SelectAgent.cs" />
+    <Compile Include="ValAPINet\Storefront.cs" />
+    <Compile Include="ValAPINet\StoreOffers.cs" />
+    <Compile Include="ValAPINet\Username.cs" />
+    <Compile Include="ValAPINet\UserPresence.cs" />
+    <Compile Include="ValAPINet\Websocket.cs" />
+    <Compile Include="Woe\Skin_Changer\RiotClient.cs" />
+    <Compile Include="Woe\ValAPINet\inventoryitems.cs" />
+    <Compile Include="Woe\ValAPINet\RichPresence.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Elsify_v2_Ingame\App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Elsify_v2\CurrentGame\CurrentGamePlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2\CurrentGame\CurrentGameUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2\UserAuth\FreeUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\EmptyUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\HomeNewsItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\Home\HomeUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\ItemCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\PlayerTitle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\SettingsUc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\Shop\ShopUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\UserAuth\App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\UserAuth\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\UserAuth\Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elsify_v2_Ingame\WeaponDefault.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="accounticon.png" />
+    <Resource Include="discordicon.png" />
+    <Resource Include="displayicon.png" />
+    <Resource Include="elsify_banner_large.png" />
+    <Resource Include="exiticon.png" />
+    <Resource Include="radiantepoints.png" />
+    <Resource Include="UserAuth\elsify_login_pub.png" />
+    <Resource Include="UserAuth\elsify_login_screen_free.png" />
+    <Resource Include="UserAuth\elsify_login_screen_round.png" />
+    <Resource Include="UserAuth\elsify_register_screen_round.png" />
+    <Resource Include="UserAuth\elsify_v2_login_screen.png" />
+    <Resource Include="vaorantpoints.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
